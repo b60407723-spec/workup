@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语单词记忆系统</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>英语单词记忆系统</h1>
+            <div class="user-bar">
+                <label for="user-id-input">当前用户</label>
+                <input id="user-id-input" type="text" placeholder="user_id" autocomplete="off" />
+                <button id="btn-user-apply">切换</button>
+            </div>
+            <nav>
+                <button id="nav-learn">学习</button>
+                <button id="nav-test">测试</button>
+                <button id="nav-review">复习</button>
+                <button id="nav-stats">统计</button>
+                <button id="nav-manage">管理</button>
+            </nav>
+        </header>
+        <main id="main-content">
+            <!-- 动态内容将在这里加载 -->
+        </main>
+    </div>
+    
+    <!-- 加载顺序很重要：先加载错误处理器，再加载主应用 -->
+    <script src="error-handler.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
